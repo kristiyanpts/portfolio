@@ -1,0 +1,104 @@
+.about-page {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 2px solid black;
+}
+
+.about-page .title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.about-me {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.about {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about .name {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 0, 180, 1);
+}
+
+.about .desc {
+  font-size: 18px;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.progress .name {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: rgba(255, 0, 180, 1);
+}
+
+.progress .courses {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.done:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+  color: green;
+  font-size: 23px;
+}
+
+.not-done:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00d";
+  display: inline-block;
+  padding-right: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+  color: red;
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-page {
+    align-items: center;
+  }
+  .progress {
+    width: 90%;
+  }
+  .progress .name {
+    text-align: center;
+  }
+}

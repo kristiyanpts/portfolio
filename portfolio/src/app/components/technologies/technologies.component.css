@@ -1,0 +1,55 @@
+.get-page {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.get-page .title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.get-page .offers {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.get-page .offers .offer {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.get-page .offers .offer .name {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 0, 180, 1);
+}
+
+.get-page .offers .offer .desc {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 880px) {
+  .offers {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
