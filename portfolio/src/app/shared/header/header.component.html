@@ -1,13 +1,17 @@
 <header>
   <div class="name">Kristiyan Petsanov</div>
-  <ul class="nav-list">
+  <ul
+    class="nav-list"
+    [ngClass]="{ open: isMenuShown === true }"
+    (click)="toggleMenu()"
+  >
     <li><a href="#home">Home</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#certificates">Certificates</a></li>
     <li><a href="/assets/CV-Latest.pdf">Download CV</a></li>
   </ul>
-  <button class="menu-icon">
+  <button class="menu-icon" (click)="toggleMenu()">
     <i class="fa-solid fa-bars-staggered"></i>
   </button>
 </header>

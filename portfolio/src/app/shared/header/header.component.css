@@ -122,15 +122,17 @@ header .name {
     top: 93px;
     z-index: 100;
     border: 1px solid white;
-    right: -100%;
+    right: 10px;
     background-color: black;
     width: fit-content;
     height: fit-content;
     padding: 20px;
     transition: 0.3s all ease;
+    display: none;
+    gap: 10px;
   }
   .nav-list.open {
-    right: 10px;
+    display: flex;
   }
   .menu-icon {
     display: flex;
