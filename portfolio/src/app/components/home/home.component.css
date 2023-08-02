@@ -1,0 +1,81 @@
+.home-page {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: scroll;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.left-side,
+.right-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+
+.left-side .subtitle {
+  text-transform: uppercase;
+  color: rgba(255, 0, 180, 1);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left-side .title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.left-side .desc {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+
+pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  clear: both;
+  color: #fff;
+  background: #1b1b1b;
+  padding: 0;
+  -ms-word-break: normal;
+  word-break: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  position: relative;
+  line-height: 28px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+pre code {
+  scrollbar-color: #666 #201c29;
+  background: none;
+  /* white-space: pre; */
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  display: block;
+  max-width: 100%;
+  min-width: 100px;
+  font-size: 16px;
+  /* line-height: 1.75; */
+}
+
+@media only screen and (max-width: 1550px) {
+  .home-page {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .left-side,
+  .right-side {
+    width: 90%;
+  }
+}

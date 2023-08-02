@@ -1,0 +1,55 @@
+footer {
+  position: relative;
+  width: 96%;
+  height: fit-content;
+  background-color: #0c0c0c;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .name {
+  font-size: 25px;
+  font-weight: 500;
+  background: #ffff00;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .links {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s all ease;
+}
+
+footer .links a:hover {
+  background: #ffff00;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
