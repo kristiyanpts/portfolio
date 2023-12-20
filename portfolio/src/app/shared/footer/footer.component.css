@@ -1,12 +1,13 @@
 footer {
   position: relative;
-  width: 96%;
+  width: 100%;
   height: fit-content;
   background-color: #0c0c0c;
-  padding: 2%;
+  padding: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 footer .name {

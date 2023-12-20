@@ -43,6 +43,7 @@
 .certificates-page .certificates .certificate .name {
   text-align: center;
   font-size: 20px;
+  margin-top: auto;
 }
 
 .certificates-page .certificates .certificate img {
